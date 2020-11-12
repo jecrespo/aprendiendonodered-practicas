@@ -1,1 +1,41 @@
-[]
+[
+    {
+        "id": "c327b5d5.4b7658",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "41e84f00.023a4",
+        "type": "mqtt in",
+        "z": "c327b5d5.4b7658",
+        "name": "",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "605b1a9c.9e56b4"
+            ]
+        ]
+    },
+    {
+        "id": "605b1a9c.9e56b4",
+        "type": "debug",
+        "z": "c327b5d5.4b7658",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 120,
+        "wires": []
+    }
+]
