@@ -140,60 +140,6 @@
         "willPayload": ""
     },
     {
-        "id": "c6d40b7f.e76e98",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "149.202.169.117",
-        "port": "1883",
-        "clientid": "9999",
-        "usetls": false,
-        "compatmode": false,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
-        "id": "41e84f00.023a4",
-        "type": "mqtt in",
-        "z": "c327b5d5.4b7658",
-        "name": "",
-        "topic": "aprendiendonodered/#",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "4f8d664f.d43718",
-        "x": 200,
-        "y": 120,
-        "wires": [
-            [
-                "605b1a9c.9e56b4"
-            ]
-        ]
-    },
-    {
-        "id": "605b1a9c.9e56b4",
-        "type": "debug",
-        "z": "c327b5d5.4b7658",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 550,
-        "y": 120,
-        "wires": []
-    },
-    {
         "id": "6d0a125b.b9aa5c",
         "type": "ui_text",
         "z": "c327b5d5.4b7658",
@@ -205,8 +151,8 @@
         "label": "text",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 530,
-        "y": 220,
+        "x": 520,
+        "y": 60,
         "wires": []
     },
     {
@@ -230,76 +176,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 220,
+        "x": 170,
+        "y": 60,
         "wires": [
             [
                 "6d0a125b.b9aa5c"
-            ]
-        ]
-    },
-    {
-        "id": "21562f55.951c3",
-        "type": "mqtt in",
-        "z": "c327b5d5.4b7658",
-        "name": "",
-        "topic": "dispensador/9999/in",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "c6d40b7f.e76e98",
-        "x": 220,
-        "y": 340,
-        "wires": [
-            [
-                "69f22451.fcc67c",
-                "3c4372d.10e8c8e"
-            ]
-        ]
-    },
-    {
-        "id": "69f22451.fcc67c",
-        "type": "debug",
-        "z": "c327b5d5.4b7658",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "15a2a558.de103b",
-        "type": "mqtt out",
-        "z": "c327b5d5.4b7658",
-        "name": "",
-        "topic": "dispensador/9999/out",
-        "qos": "",
-        "retain": "",
-        "broker": "c6d40b7f.e76e98",
-        "x": 670,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "3c4372d.10e8c8e",
-        "type": "function",
-        "z": "c327b5d5.4b7658",
-        "name": "",
-        "func": "msg.payload = \"OK\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 430,
-        "y": 460,
-        "wires": [
-            [
-                "15a2a558.de103b"
             ]
         ]
     }
